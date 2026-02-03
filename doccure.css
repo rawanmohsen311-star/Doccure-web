@@ -1,0 +1,729 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+}
+.custom-nav-tabs .nav-link {
+    color: black !important;
+    font-weight: 600;
+    padding: 15px 25px;
+    background: none;
+}
+.custom-nav-tabs .nav-link.active {
+    color: #316DFF !important; 
+    border-bottom: 3px solid #0066E9 !important;
+    background: transparent;
+}
+/* actives */
+.navbar-nav .nav-link.active {
+    color: blue !important;
+    position: relative;
+}
+
+.buttons-right button .acttive {
+    background-color: #316DFF;
+    color: #fff;
+}
+
+.tab.active {
+    color: #0066E9 !important;
+}
+
+.uline-green {
+    text-decoration: underline green;
+}
+
+/* before after */
+.navbar-nav .nav-link.active::before {
+    content: "";
+    background: linear-gradient(90.08deg, #316DFF 0.09%, #02BFFF 70.28%);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: -1px;
+    bottom: 1px;
+    border-radius: 30px;
+}
+
+.neon-pulse::before,
+.neon-pulse::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border: 12px solid #fff;
+    border-radius: inherit;
+    animation: pulseOut 2s linear infinite;
+}
+
+.neon-pulse::after {
+    animation-delay: 2.52s;
+}
+
+.offcanvas-body .navbar-nav .nav-item {
+    position: static !important;
+}
+
+.h-100vh {
+    height: 150vh;
+}
+
+.nav-item .dropdown-menu {
+    background-image: url(../image/Doccure/home-menu-img-1.png);
+    background-size: 100% 100%;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
+.home-menu {
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.card-home {
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.home-menu,
+.pages-menu {
+    width: 100%;
+    left: 0;
+}
+
+.doctors-menu {
+    left: 27% !important;
+    z-index: 5 !important;
+}
+
+.patients-menu {
+    left: 25% !important;
+    width: 55%;
+    z-index: 5 !important;
+}
+
+.pharmacy-menu {
+    left: 45% !important;
+    width: 40% !important;
+}
+
+.blog-menu {
+    left: 55% !important;
+    width: 20% !important;
+}
+
+.admin-menu {
+    left: 60% !important;
+    width: 20% !important;
+    z-index: 5 !important;
+}
+
+.dropdown-item {
+    padding: 10px 15px !important;
+}
+
+.primary-gradient {
+    background: linear-gradient(90.08deg, #316DFF 0.09%, #02BFFF 70.28%);
+}
+
+.img-s {
+    left: 0;
+    bottom: 0;
+}
+
+.img-e-b {
+    right: 0;
+    top: 65px;
+}
+
+.img-e-t {
+    right: 0;
+    top: 0;
+}
+
+.img-country {
+    width: 16px;
+    height: 16px;
+}
+
+.sec-list {
+    bottom: 35px;
+}
+
+
+/* hover */
+.dropdown-item:hover {
+    background-color: transparent !important;
+    color: #0066E9 !important;
+    padding-left: 1.7rem;
+}
+
+.color-btn:hover {
+    background-color: black !important;
+    transition: all 0.5s;
+}
+
+.home-menu .col:hover {
+    transform: translateY(-15px);
+}
+
+.nav-item:hover .home-menu,
+.nav-item:hover .doctors-menu,
+.nav-item:hover .patients-menu,
+.nav-item:hover .pharmacy-menu,
+.nav-item:hover .pages-menu,
+.nav-item:hover .blog-menu,
+.nav-item:hover .admin-menu {
+    display: block !important;
+    top: 5.15rem;
+}
+
+.hover-color-blue:hover {
+    color: blue !important;
+}
+
+.hover-bg-blue-color-white:hover {
+    background: #0066E9 !important;
+    color: #fff !important;
+}
+
+.hover-rotate:hover i,
+.hover-rotate:hover img {
+    transform: rotatey(360deg);
+    transition: all 1s;
+}
+
+.hover-top-Specialties:hover {
+    span img {
+        transform: rotatey(360deg);
+        transition: all 1s;
+    }
+
+    span {
+        background: #0066E9 !important;
+    }
+
+    .bg-opacity-25 {
+        background-color: #000 !important;
+        opacity: 0.65 !important;
+    }
+}
+
+.bookus-sec .col-xl-3:hover {
+    p.h3 {
+        color: #316DFF;
+        transition: all 1s;
+    }
+
+    h4 {
+        color: #316DFF !important;
+        transition: all 1s;
+    }
+}
+
+.sec-testimonails .col-xl-4:hover {
+    div {
+        background-color: #316DFF !important;
+        color: #dee2e6 !important;
+        transition: all 1s;
+    }
+
+    a {
+        color: #dee2e6 !important;
+        transition: all 1s;
+    }
+
+    .report {
+        color: #dee2e6 !important;
+        transition: all 1s;
+    }
+}
+
+/*  */
+
+/* font size */
+.fs-7 {
+    font-size: 0.95rem;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+/*  */
+
+
+.icon-rotate {
+    transition: 0.3s;
+}
+
+.div-image-rotated {
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto 0.25rem;
+    border-radius: 50%
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.offcanvas-end .offcanvas-body {}
+
+.img-bg-offcanvas-end {
+    bottom: 0;
+}
+
+.buttons-right {
+    right: 10px;
+    top: 50%;
+    z-index: 100;
+}
+
+.buttons-right button {
+    border: none !important;
+}
+
+.ml--15 {
+    margin-left: -15%;
+}
+
+.py-8 {
+    padding: 8rem 0;
+}
+
+.py-6 {
+    padding: 6rem 0;
+}
+
+.call-doctor {
+    position: absolute;
+    bottom: 125px;
+    left: 165px;
+    transition: all 0.4s ease;
+}
+
+.neon-pulse {
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px #fff;
+    overflow: visible;
+}
+
+
+
+
+@keyframes pulseOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.bg-red {
+    background-color: #ff0000;
+    ;
+}
+
+.owl-nav {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button {
+    background-color: white !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 50% !important;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -25px !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -25px !important;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.img-up {
+    transition: all 0.5s ease;
+}
+
+/* scale!!!!!!! */
+.img-up:hover {
+    transform: scale(1.2);
+}
+
+.item span {
+    top: 60px;
+    left: 60px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.availability {
+    background: #e9f9f0;
+    color: #1fa97c;
+}
+
+.text-orange {
+    color: #ff5722;
+}
+
+.bg-orange {
+    background-color: #ff5722;
+}
+
+.cir-40 {
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+}
+
+.cir-45 {
+    width: 45px;
+    height: 45px;
+    align-content: center;
+    justify-content: center;
+}
+
+.cir-50 {
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+.cir-60 {
+    width: 60px;
+    height: 60px;
+    align-content: center;
+    justify-content: center;
+}
+
+.circle-list-pharmacy::before {
+    content: "";
+    background-color: rgba(32, 192, 243, 0.2);
+    height: 12px;
+    width: 12px;
+    border: 2px solid #0066E9;
+    border-radius: 50%;
+    left: -47px;
+    top: 8%;
+    position: absolute;
+
+}
+
+.form-select {}
+
+.section-one {
+    background: url("../image/Doccure/bg-home-sec-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* dots */
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dots-white::before,
+.dots-white::after {
+    content: "";
+    position: absolute;
+    top: 55%;
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.dots-white::before {
+    left: 10px;
+}
+
+.dots-white::after {
+    right: 10px;
+}
+
+.dots-blue::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    width: 6px;
+    height: 6px;
+    background-color: #130ac0;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.dots-blue::before {
+    left: -12px;
+}
+
+
+/*  */
+
+.sec-reasons-book {
+    background: url(../image/Doccure/);
+}
+
+.cover-profile {
+    background: url(../image/Doccure/doctor-sidebar-bg.jpg);
+    height: 150px;
+}
+
+.bg-soft-orange {
+    background-color: #FCEFEA;
+    color: #e04f16;
+}
+
+.accor-faqs .accordion-button:not(.collapsed){
+    color: #130ac0 !important;
+    background: transparent;
+    border: none !important;
+}
+.accor-faqs .accordion:not(.collapsed){
+    background: transparent !important;
+}
+.accor-faqs .accordion-item{
+    border: none;
+}
+.accor-faqs .accordion-button::after {
+    background-image: url(../image/Doccure/positive.png) !important;
+    background-size: 10px !important;
+    background-position: center;
+    border: 1px solid rgba(0, 0, 0, 0.595);
+    border-radius: 50%;
+}
+
+.accor-faqs .accordion-button.accordion-button:not(.collapsed)::after{
+    transform: rotate(45deg) !important;
+}
+.edit-accor .accordion-item {
+    border: 1px solid #1E293B !important;
+    background: rgba(1, 32, 71, 0.2) !important;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.edit-accor .accordion-button {
+    background-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.edit-accor .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    color: #0066E9;
+
+}
+.edit-accor .accordion-button::after {
+    background-color: #1E293B;
+    background-size: 15px !important;
+    background-position: center;
+    border-radius: 3px;
+    content: "" !important;
+    background-image: url(../image/Doccure/positive.png) !important;
+}
+
+.edit-accor .accordion-button:not(.collapsed)::after {
+    background-color: #0066E9;
+    background-image: url(../image/Doccure/negativepng.png) !important;
+    background-size: 10px !important;
+    background-position: center;
+    border-radius: 3px;
+    content: "" !important;
+
+}
+
+.edit-accor .accordion-body {
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+.way-icon {
+    position: absolute;
+    top: 13px;
+    right: -25%;
+    width: 156px;
+    height: 27px;
+}
+
+.sec-testimonails {
+    background: url(../image/Doccure/imgi_101_testimonial-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hover-primary-line:hover {
+    color: blue !important;
+    text-decoration: solid !important;
+}
+
+/* dash */
+.accept:hover {
+    background-color: green;
+}
+
+.reject:hover {
+    background-color: red;
+}
+
+.footer-dash {
+    background: url(../image/Doccure/imgi_47_footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.select2-container .select2-selection--single {
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.bar {
+    background: linear-gradient(90deg, #1e90ff, #00bfff);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 15px 0;
+    background-repeat: repeat-x;
+
+}
+
+.content {
+    display: flex;
+    width: 200%;
+    animation: marquee 18s linear infinite;
+}
+
+.content h6 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.content h6::after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    top: 55%;
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+
+    }
+}
+
+.bottom-bar {
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .sec-list div {
+        justify-content: center !important;
+    }
+
+    .bottom-bar {
+        justify-content: center !important;
+        gap: 16px !important;
+    }
+    .select-search-box{
+        border-radius: 35px ;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-one .sec-one-select{
+        align-items: center !important;
+    }
+    .card-home {
+        height: fit-content !important;
+        border: none !important;
+        border-radius: 0;
+        padding: .5rem 0 !important;
+        background: transparent;
+        margin: 0 !important;
+        text-align: start !important;
+    }
+
+    .card-home img {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background: none !important;
+        border: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-y: auto !important;
+    }
+
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #dee2e6;
+        padding: 0.75rem 0 !important;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item .nav-link span {
+        border: 1px solid #dee2e6 !important;
+        border-radius: 8px;
+        padding: .35rem;
+    }
+
+    .sec-home {
+        font-size: small !important;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .select-search-box {
+        border-radius: 16px !important;
+    }
+}
